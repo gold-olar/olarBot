@@ -90,3 +90,5 @@ bot.on('sticker', (ctx) => ctx.reply('Ode...'));
 
 
 bot.launch();
+
+module.exports = app;
