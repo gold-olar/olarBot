@@ -1,3 +1,16 @@
+const express = require('express')
+const app = express()
+
+app.get('/', (req, res)=>{
+    res.status(200).json({
+        message: 'Welcome to Olarbot',
+        owner: 'Olamide Samuel'
+    })
+})
+
+
+
+
 const http = require('http');
 const port = process.env.port || 3000;
 const Telegraf = require('telegraf');
@@ -6,13 +19,16 @@ const bot = new Telegraf(process.env.BOT_TOKEN);
 const axios = require('axios');
 const validator = require('validator');
 
-const server = http.createServer();
-server.listen(port, (err) => {
-    if (err) {
-        return console.log('something bad happened', err)
-    }
-    console.log(`server is listening on ${port}`)
-});
+// const server = http.createServer();
+// server.listen(port, (err) => {
+//     if (err) {
+//         return console.log('something bad happened', err)
+//     }
+//     console.log(`server is listening on ${port}`)
+// });
+
+app.listen(port, () => console.log(` app listening on port ${port}!`))
+
 
 bot.start((ctx) => {
     const name = ctx.message.from.first_name;
