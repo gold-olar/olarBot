@@ -32,7 +32,9 @@ app.listen(port, () => console.log(` app listening on port ${port}!`))
 
 bot.start((ctx) => {
     const name = ctx.message.from.first_name;
-    ctx.reply(`Hey there ${name} , Enter a long link to be shortened...`)
+    ctx.reply(`Hey there ${name} , Enter a long link to be shortened...
+    or enter "/help" to get a list of things i could do..
+    `)
     .then()
 });
 bot.hears('hi', (ctx) => {
