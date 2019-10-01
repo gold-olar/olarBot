@@ -73,7 +73,7 @@ bot.on('text', async (ctx) => {
         ctx.reply("Thank You for using OlarBot")
 
     } else {
-        ctx.reply("Goldin made me just a url shorter, So i understand only links BITCH....")
+        ctx.reply("Goldin made me just a url shorter, So i understand only links ....")
     }
 
 })
