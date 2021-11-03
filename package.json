@@ -16,6 +16,6 @@
     "express": "^4.17.1",
     "nodemon": "^1.19.1",
     "telegraf": "^3.32.0",
-    "validator": "^11.1.0"
+    "validator": "^13.7.0"
   }
 }
